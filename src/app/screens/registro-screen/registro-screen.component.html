@@ -11,44 +11,44 @@
                 <div class="form-login">
                     <h1 class="title-login">REGÍSTRATE</h1>
 
-                    <mat-form-field class="inputs-login" appearance="outline">
+                    <mat-form-field class="inputs-login" appearance="fill">
                         <mat-label>Nombre</mat-label>
                         <input [(ngModel)]="user.first_name" type="text" matInput placeholder="Ingresa nombre">
                     </mat-form-field>
                     <div *ngIf="errors.first_name" class="invalid-feedback">{{ errors.first_name }}</div>
                     
-                    <mat-form-field class="inputs-login" appearance="outline">
+                    <mat-form-field class="inputs-login" appearance="fill">
                         <mat-label>Apellidos</mat-label>
                         <input [(ngModel)]="user.last_name" type="text" matInput placeholder="Ingresa apellido">
                     </mat-form-field>
                     <div *ngIf="errors.last_name" class="invalid-feedback">{{ errors.last_name }}</div>
     
-                    <mat-form-field class="inputs-login" appearance="outline">
+                    <mat-form-field class="inputs-login" appearance="fill">
                         <mat-label>Correo Electrónico</mat-label>
                         <input [(ngModel)]="user.email" type="email" matInput placeholder="Ingresa correo electrónico">
                     </mat-form-field>
                     <div *ngIf="errors.email" class="invalid-feedback">{{ errors.email }}</div>
     
-                    <mat-form-field class="inputs-login" appearance="outline">
+                    <mat-form-field class="inputs-login" appearance="fill">
                         <mat-label class="label">Contraseña</mat-label>
                         <input [(ngModel)]="user.password" type="{{ inputType_1 }}" class="input" matInput placeholder="Ingresa contraseña">
                         <mat-icon matSuffix class="eye-icon" (click)="showPassword()">{{hide_1 ? 'visibility_off' : 'visibility'}}</mat-icon>
                     </mat-form-field>
                     <div *ngIf="errors.password" class="invalid-feedback">{{ errors.password }}</div>
     
-                    <mat-form-field class="inputs-login" appearance="outline">
+                    <mat-form-field class="inputs-login" appearance="fill">
                         <mat-label>Teléfono</mat-label>
                         <input [(ngModel)]="user.telefono" type="text" mask='(000) 000-0000' matInput placeholder="Ingresa teléfono">
                     </mat-form-field>
                     <div *ngIf="errors.telefono" class="invalid-feedback">{{ errors.telefono }}</div>
     
-                    <mat-form-field class="inputs-login" appearance="outline">
+                    <mat-form-field class="inputs-login" appearance="fill">
                         <mat-label>Ciudad</mat-label>
                         <input [(ngModel)]="user.ciudad" type="text" matInput placeholder="Ingresa ciudad">
                     </mat-form-field>
                     <div *ngIf="errors.ciudad" class="invalid-feedback">{{ errors.ciudad }}</div>
 
-                    <mat-form-field appearance="outline">
+                    <mat-form-field appearance="fill">
                         <mat-label>Edad</mat-label>
                         <mat-select [(ngModel)]="user.edad" name="edad">
                             <mat-option *ngFor="let edad of edades" [value]="edad.value">
@@ -62,7 +62,7 @@
                         Acepto los <span class="label-pwd" (click)="terminosCondiciones()" style="cursor: pointer;">Términos y Condiciones</span>
                     </mat-checkbox>
 
-                    <div class="d-flex flex-direction-row justify-content-center w-100 mt-4 mb-4">
+                    <div class="form-login-desktop">
                         <button mat-flat-button color="warn" class="btn-login" (click)="registrar()">
                             <span class="text-btn">REGISTRARME</span>
                         </button>
@@ -94,44 +94,44 @@
                 <div class="section-right">
                     <div class="form-login-desktop">
                         <h1 class="title-login">REGÍSTRATE</h1>
-                        <mat-form-field class="inputs-login" appearance="outline">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label>Nombre</mat-label>
                             <input [(ngModel)]="user.first_name" type="text" matInput placeholder="Ingresa nombre">
                         </mat-form-field>
                         <div *ngIf="errors.first_name" class="invalid-feedback">{{ errors.first_name }}</div>
         
-                        <mat-form-field class="inputs-login" appearance="outline">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label>Apellidos</mat-label>
                             <input [(ngModel)]="user.last_name" type="text" matInput placeholder="Ingresa apellido">
                         </mat-form-field>
                         <div *ngIf="errors.last_name" class="invalid-feedback">{{ errors.last_name }}</div>
         
-                        <mat-form-field class="inputs-login" appearance="outline">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label>Correo Electrónico</mat-label>
                             <input [(ngModel)]="user.email" type="email" matInput placeholder="Ingresa correo electrónico">
                         </mat-form-field>
                         <div *ngIf="errors.email" class="invalid-feedback">{{ errors.email }}</div>
         
-                        <mat-form-field class="inputs-login" appearance="outline">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label class="label">Contraseña</mat-label>
                             <input [(ngModel)]="user.password" type="{{ inputType_1 }}" class="input" matInput placeholder="Ingresa contraseña">
                             <mat-icon matSuffix class="eye-icon" (click)="showPassword()">{{hide_1 ? 'visibility_off' : 'visibility'}}</mat-icon>
                         </mat-form-field>
                         <div *ngIf="errors.password" class="invalid-feedback">{{ errors.password }}</div>
         
-                        <mat-form-field class="inputs-login" appearance="outline">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label>Teléfono</mat-label>
                             <input [(ngModel)]="user.telefono" type="text" mask='(000) 000-0000' matInput placeholder="Ingresa teléfono">
                         </mat-form-field>
                         <div *ngIf="errors.telefono" class="invalid-feedback">{{ errors.telefono }}</div>
         
-                        <mat-form-field class="inputs-login" appearance="outline">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label>Ciudad</mat-label>
                             <input [(ngModel)]="user.ciudad" type="text" matInput placeholder="Ingresa ciudad">
                         </mat-form-field>
                         <div *ngIf="errors.ciudad" class="invalid-feedback">{{ errors.ciudad }}</div>
         
-                        <mat-form-field appearance="outline">
+                        <mat-form-field appearance="fill">
                             <mat-label>Edad</mat-label>
                             <mat-select [(ngModel)]="user.edad" name="edad">
                                 <mat-option *ngFor="let edad of edades" [value]="edad.value">

@@ -15,6 +15,10 @@ import {MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { RegistroScreenComponent } from './screens/registro-screen/registro-screen.component';
+//mask
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,9 +37,11 @@ import { RegistroScreenComponent } from './screens/registro-screen/registro-scre
     MatNativeDateModule,
     MatSelectModule,
     MatCheckboxModule,
+    NgxMaskModule.forRoot(options),
+    
 
   ],
-  providers: [],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

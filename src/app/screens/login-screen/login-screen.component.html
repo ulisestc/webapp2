@@ -14,13 +14,13 @@
                     <div class="form-login">
                         <h1 class="title-login">INICIO DE SESIÓN</h1>
 
-                        <mat-form-field class="inputs-login" appearance="outline">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label>Correo Electrónico</mat-label>
                             <input [(ngModel)]="username" type="email" matInput placeholder="Ingresa correo electrónico">
                         </mat-form-field>
                         <div *ngIf="errors.username" class="invalid-feedback">{{ errors.username }}</div>
                         
-                        <mat-form-field class="inputs-login" appearance="outline">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label class="label">Contraseña</mat-label>
                             <input [(ngModel)]="password" type="{{ inputType_1 }}" class="input" matInput placeholder="Ingresa contraseña" (keyup.enter)="login()">
                             <mat-icon matSuffix class="eye-icon" (click)="showPassword()">{{hide_1 ? 'visibility_off' : 'visibility'}}</mat-icon>
@@ -69,13 +69,13 @@
 
                         <h1 class="title-login">INICIO DE SESIÓN</h1>
 
-                        <mat-form-field class="inputs-login" appearance="outline">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label>Correo Electrónico</mat-label>
                             <input [(ngModel)]="username" type="email" matInput placeholder="Ingresa correo electrónico">
                         </mat-form-field>
                         <div *ngIf="errors.username" class="invalid-feedback">{{ errors.username }}</div>
 
-                        <mat-form-field class="inputs-login" appearance="outline">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label class="label">Contraseña</mat-label>
                             <input [(ngModel)]="password" type="{{ inputType_1 }}" class="input" matInput placeholder="Ingresa contraseña" (keyup.enter)="login()">
                             <mat-icon matSuffix class="eye-icon" (click)="showPassword()">{{hide_1 ? 'visibility_off' : 'visibility'}}</mat-icon>
