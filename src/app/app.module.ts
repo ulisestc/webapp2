@@ -14,10 +14,12 @@ import {FormsModule} from '@angular/forms';
 import {MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { RegistroScreenComponent } from './screens/registro-screen/registro-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginScreenComponent,
+    RegistroScreenComponent,
   ],
   imports: [
     BrowserModule,
