@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-registro-screen',
   templateUrl: './registro-screen.component.html',
@@ -17,7 +17,9 @@ export class RegistroScreenComponent implements OnInit {
   public selectedValue: string = "";
   public edades: any[] = [];
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.llenarArrayEdades();
@@ -41,7 +43,7 @@ export class RegistroScreenComponent implements OnInit {
   }
 
   public goLogin(){
-
+    this.router.navigate(["login"])
   }
 
   showPassword()
