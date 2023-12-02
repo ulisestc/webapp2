@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginScreenComponent } from './screens/login-screen/login-screen.component';
+import { RegistroScreenComponent } from './screens/registro-screen/registro-screen.component';
 //material
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
@@ -14,7 +15,8 @@ import {FormsModule} from '@angular/forms';
 import {MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { RegistroScreenComponent } from './screens/registro-screen/registro-screen.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 //mask
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
@@ -46,6 +48,8 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
     MatSelectModule,
     MatCheckboxModule,
     NgxMaskModule.forRoot(options),
+    MatSidenavModule,
+    MatProgressSpinnerModule,
     
 
   ],
