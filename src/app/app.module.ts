@@ -17,6 +17,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { RegistroScreenComponent } from './screens/registro-screen/registro-screen.component';
 //mask
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
+import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.component';
+import { HeaderAppComponent } from './partials/header-app/header-app.component';
+import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
 @NgModule({
@@ -24,6 +28,10 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
     AppComponent,
     LoginScreenComponent,
     RegistroScreenComponent,
+    HomeScreenComponent,
+    JuegoScreenComponent,
+    HeaderAppComponent,
+    LeftSidebarComponent,
   ],
   imports: [
     BrowserModule,
