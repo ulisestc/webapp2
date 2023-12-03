@@ -76,13 +76,15 @@
                                 <table class="table table-responsive" *ngIf="lista_codigos.length > 0; else sinCodigos">
                                     <thead class="head-table">
                                     <tr>
+                                        <!-- pregunta si tiene codigos registrados, si no se va al ng template -->
                                         <th scope="col" *ngIf="tiene_juegos_pendientes">Jugar</th>
                                         <th scope="col">Fecha</th>
                                         <th scope="col">Código</th>
                                         <th scope="col">Puntos totales</th>
                                         <th scope="col" style="min-width: 100px;">Puntos por código</th>
                                         <th scope="col" style="min-width: 100px;">Puntos por jugar</th>
-                                        <th scope="col" style="min-width: 20px; border-bottom: 0px;"></th>
+                                        <th scope="col" style="min-width: 20px; border-bottom: 0px;"> </th>
+                                        <!-- trampa para agregar margen -->
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -107,7 +109,7 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <!-- <app-footer-app></app-footer-app> -->
+                    <app-footer-app></app-footer-app>
                 </div>
             </div>
         </mat-drawer-container>

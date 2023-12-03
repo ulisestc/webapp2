@@ -24,6 +24,7 @@ import { HomeScreenComponent } from './screens/home-screen/home-screen.component
 import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.component';
 import { HeaderAppComponent } from './partials/header-app/header-app.component';
 import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
+import { FooterAppComponent } from './partials/footer-app/footer-app.component';
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
 @NgModule({
@@ -35,6 +36,7 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
     JuegoScreenComponent,
     HeaderAppComponent,
     LeftSidebarComponent,
+    FooterAppComponent,
   ],
   imports: [
     BrowserModule,

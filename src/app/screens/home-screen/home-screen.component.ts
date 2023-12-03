@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class HomeScreenComponent implements OnInit {
 
-  public name_user: string = "Luis Yael Méndez Sánchez";
+  public name_user: string = "Aarón Ulises Torres Corte";
   public isLoading: boolean = false;
   //Form dinámico de campos de texto
   public inputsCodigo : FormGroup;
@@ -51,27 +51,28 @@ export class HomeScreenComponent implements OnInit {
   }
 
   public obtenerCodigos(){
+    // si está vacio cambia el html para que diga que no hay codigs registrados (ng template)
     this.lista_codigos = [
       {
         "creation": "2022-10-18",
-        "codigo": 264956,
-        "puntos_totales": 1100,
+        "codigo": 234432,
+        "puntos_totales": 7777,
         "puntos_codigo": 1000,
-        "puntos_jugar": 100,
+        "puntos_jugar": 777,
       },
       {
         "creation": "2022-11-20",
-        "codigo": 254956,
+        "codigo": 765567,
         "puntos_totales": 1300,
-        "puntos_codigo": 1000,
-        "puntos_jugar": 300,
+        "puntos_codigo": 1123,
+        "puntos_jugar": 777,
       },
       {
         "creation": "2022-12-19",
-        "codigo": 274956,
-        "puntos_totales": 1200,
-        "puntos_codigo": 1000,
-        "puntos_jugar": 200,
+        "codigo": 988900,
+        "puntos_totales": 1111,
+        "puntos_codigo": 2333,
+        "puntos_jugar": 222,
       }
     ];
   }
