@@ -31,6 +31,7 @@ import { PoliticaPrivacidadScreenComponent } from './screens/politica-privacidad
 import { LentesScreenComponent } from './screens/lentes-screen/lentes-screen.component';
 import { TerminosYCondicionesScreenComponent } from './screens/terminos-y-condiciones-screen/terminos-y-condiciones-screen.component';
 import { JuegoTerminadoScreenComponent } from './screens/juego-terminado-screen/juego-terminado-screen.component';
+import { PerfilUsuarioComponent } from './screens/perfil-usuario/perfil-usuario.component';
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
 @NgModule({
@@ -49,6 +50,7 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
     LentesScreenComponent,
     TerminosYCondicionesScreenComponent,
     JuegoTerminadoScreenComponent,
+    PerfilUsuarioComponent,
   ],
   imports: [
     BrowserModule,

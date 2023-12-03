@@ -39,7 +39,7 @@ export class LeftSidebarComponent implements OnInit {
   }
 
   public goPerfil(){
-
+    this.router.navigate(["perfil-usuario"]);
   }
 
   public logout(){

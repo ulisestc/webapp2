@@ -1,1 +1,46 @@
-<p>juego-terminado-screen works!</p>
+<section class="politica-privacidad">
+    <div class="wrapper">
+        <mat-drawer-container>
+            <mat-drawer #drawer mode='over' position="start">
+                <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+            </mat-drawer>
+            <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+            <hr class="linea">
+            <!-- Sección del body donde se muestra todo el contenido -->
+            
+            <div class="body">
+
+                <div class="titulo">
+                    <div class="line-color">
+                        <div class="vertical-line" style="height: 111px;"></div>
+                    </div>
+                    <h2>¡EXCELENTE CARRERA!</h2>
+                </div>
+
+                <div class="rojo">
+                    <div class="section-rojo"></div>
+                </div>
+                <div class="texto-body">
+                    <h3 class="obtuviste">
+                        OBTUVISTE
+                    </h3>
+                    <p class="puntos">1400</p>
+                    <p class="puntostxt">puntos</p>
+                    <span class="parrafo">Gracias por participar, acumula más puntos y gana una increíble <span><strong>Ducati Scrambler</strong>.</span></span>
+                </div>
+
+                <div class="button">
+                    <div class="red">
+                        <span class="texto-boton" (click)="goHome()">IR AL INCIO</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                    <app-footer-app></app-footer-app>
+            </div>
+            
+        </mat-drawer-container>
+        
+    </div>
+</section>
