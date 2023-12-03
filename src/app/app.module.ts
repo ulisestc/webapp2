@@ -25,6 +25,12 @@ import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.compon
 import { HeaderAppComponent } from './partials/header-app/header-app.component';
 import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
 import { FooterAppComponent } from './partials/footer-app/footer-app.component';
+import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/bases-promocion-screen.component';
+import { InstruccionesScreenComponent } from './screens/instrucciones-screen/instrucciones-screen.component';
+import { PoliticaPrivacidadScreenComponent } from './screens/politica-privacidad-screen/politica-privacidad-screen.component';
+import { LentesScreenComponent } from './screens/lentes-screen/lentes-screen.component';
+import { TerminosYCondicionesScreenComponent } from './screens/terminos-y-condiciones-screen/terminos-y-condiciones-screen.component';
+import { JuegoTerminadoScreenComponent } from './screens/juego-terminado-screen/juego-terminado-screen.component';
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
 @NgModule({
@@ -37,6 +43,12 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
     HeaderAppComponent,
     LeftSidebarComponent,
     FooterAppComponent,
+    BasesPromocionScreenComponent,
+    InstruccionesScreenComponent,
+    PoliticaPrivacidadScreenComponent,
+    LentesScreenComponent,
+    TerminosYCondicionesScreenComponent,
+    JuegoTerminadoScreenComponent,
   ],
   imports: [
     BrowserModule,

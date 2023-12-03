@@ -1,0 +1,44 @@
+<section class="politica-privacidad">
+    <div class="wrapper">
+        <mat-drawer-container>
+            <mat-drawer #drawer mode='over' position="start">
+                <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+            </mat-drawer>
+            <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+            <!-- Sección del body donde se muestra todo el contenido -->
+            <div class="body-politica-privacidad">
+                <div class="eslogan {{isMobile()}}">
+                    <div class="line-color">
+                        <div class="vertical-line" style="height: 111px;"></div>
+                    </div>
+                    <div class="title-link">
+                        <span>TÉRMINOS Y CONDICIONES</span>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <span class="politica-txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, similique quas vel ullam tempora iure commodi quidem officia quisquam rerum minus fugiat in nemo beatae fugit praesentium blanditiis nostrum. Atque.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi id dolor distinctio quisquam corrupti, perspiciatis quos voluptas rem exercitationem dolore unde facere animi, cumque expedita aut, reprehenderit fuga praesentium culpa.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam beatae eveniet maxime nobis veritatis saepe impedit assumenda porro debitis nisi. Saepe modi nostrum ad, excepturi in nam unde magnam veritatis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia assumenda recusandae facere modi molestiae delectus blanditiis sunt praesentium. Blanditiis enim ullam itaque molestias at? Provident, cupiditate. Debitis, reiciendis repellendus?
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, recusandae mollitia illo nobis nulla sint vero aliquam beatae totam ex laborum commodi asperiores. Dicta explicabo magnam quia repellendus porro optio.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In id exercitationem fugiat, cumque molestias sed possimus ipsa omnis nostrum totam obcaecati temporibus atque. Modi repellendus labore nesciunt placeat fuga impedit!
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui culpa eligendi quasi a reiciendis commodi dolore, ipsum temporibus unde saepe aliquid tempora necessitatibus labore doloremque. Inventore veniam placeat ratione?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, sit. Ullam ratione cum ipsa cumque animi nisi culpa commodi aspernatur magni. Blanditiis recusandae provident voluptate, magnam in laboriosam quo eligendi.
+                    </span>
+                </div>
+
+                <div class="footer">
+                    <app-footer-app></app-footer-app>
+                </div>
+            </div>    
+        </mat-drawer-container>
+    </div>
+</section>

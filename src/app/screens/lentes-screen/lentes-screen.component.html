@@ -1,0 +1,62 @@
+<section class="lentes">
+    <div class="wrapper">
+        <mat-drawer-container>
+            <mat-drawer #drawer mode='over' position="start">
+                <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+            </mat-drawer>
+            <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+            <!-- Sección del body donde se muestra todo el contenido -->
+            <div class="body-lentes">
+                <div class="eslogan {{isMobile()}}">
+                    <div class="line-color">
+                        <div class="vertical-line" style="height: 111px;"></div>
+                    </div>
+                    <div class="title-link">
+                        <span>NUEVO LOOK</span>
+                    </div>
+                </div>
+
+                <div class="anuncio">
+                    <span class="anuncio-txt">
+                        ¿Quieres tener una idea de cómo verías si usarás unos increíbles Carrera Ducati?
+                    </span>
+                </div>
+                
+                <div class="lentes">
+                    <img src="/assets/images/lentes-ducati-1.png" class="lentes-1" alt>
+                    <span class="nombres-lentes">
+                        CARDUC 001/S
+                    </span>
+
+                    <img src="/assets/images/lentes-ducati-2.png" class="lentes-2" alt>
+                    <span class="nombres-lentes">
+                        CARDUC 002/S
+                    </span>
+
+                    <img src="/assets/images/lentes-ducati-3.png" class="lentes-3" alt>
+                    <span class="nombres-lentes">
+                        CARDUC 003/S
+                    </span>
+                </div>
+
+                <div class="botones">
+                    <div class="d-flex flex-direction-row justify-content-center w-100 mt-3 mb-3">
+                        <button mat-flat-button class="btn-omitir" (click)="omitir()" [disabled]="isLoading">
+                            <span class="text-btn-omitir" *ngIf="!isLoading">OMITIR</span>
+                        </button>
+                    </div>
+
+                    <div class="d-flex flex-direction-row justify-content-center w-100 mt-3 mb-3">
+                        <button mat-flat-button color="warn" class="btn-lentes" (click)="usarLentes()" [disabled]="isLoading">
+                            <span class="text-btn" *ngIf="!isLoading">USAR LENTES</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <app-footer-app></app-footer-app>
+                </div>
+            </div>    
+        </mat-drawer-container>
+    </div>
+</section>

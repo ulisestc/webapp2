@@ -19,7 +19,7 @@ export class FooterAppComponent implements OnInit {
   }
 
   public avisoPrivacidad(){
-    this.router.navigate(["aviso-de-privacidad"]);
+    this.router.navigate(["politica-privacidad"]);
   }
 
 }
