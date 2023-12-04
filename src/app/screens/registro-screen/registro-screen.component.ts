@@ -35,7 +35,7 @@ export class RegistroScreenComponent implements OnInit {
     console.log(event);
   }
   public terminosCondiciones(){
-
+    this.router.navigate(['terminos-y-condiciones']);
   }
 
   public registrar(){

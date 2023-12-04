@@ -156,3 +156,33 @@
     font-size: 16px;
     text-align: justify;
 }
+// ---------------------------------------------------------------------------------
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.red{
+    width: 188px;
+    height: 40px;
+    background-color: #CD0000;
+    margin-bottom: 6vh;
+}
+
+.texto-boton{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.linea {
+    height: 1px;
+    background-color: #ccc;
+    // border: none;
+}

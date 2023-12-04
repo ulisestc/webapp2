@@ -1,1 +1,31 @@
-<p>perfil-usuario works!</p>
+<section class="perfil-usuario">
+    <div class="wrapper">
+        <mat-drawer-container>
+            <mat-drawer #drawer mode='over' position="start">
+                <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+            </mat-drawer>
+            <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+            <div class="linea"></div>
+            
+            <div class="body">
+                <img src="/assets/images/pp.jpg" class="foto" alt="">
+                <span class="texto-body">Aarón Ulises Torres Corte</span>
+                <span class="texto-body">Herramientas Web</span>
+                <span class="texto-body">Luis Yael Méndez Sánchez</span>
+                <span class="texto-body">Otoño 2023</span>    
+            </div>
+
+            <div class="links">
+                <span (click)="goInstrucciones()">Instrucciones Screen</span>
+                <span (click)="goJuego()">Juego Screen</span>
+                <span (click)="goLentes()">Lentes Screen</span>
+            </div>
+
+            <div class="footer">
+                    <app-footer-app></app-footer-app>
+            </div>
+            
+        </mat-drawer-container>
+        
+    </div>
+</section>

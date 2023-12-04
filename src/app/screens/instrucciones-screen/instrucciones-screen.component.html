@@ -5,6 +5,7 @@
                 <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
             </mat-drawer>
             <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+            <div class="linea"></div>
             <!-- Sección del body donde se muestra todo el contenido -->
             <div class="body-instrucciones">
                 <div class="eslogan {{isMobile(1)}}">
@@ -60,9 +61,14 @@
                 </div>
 
                 <div class="d-flex flex-direction-row justify-content-center w-100 mt-3 mb-3">
-                    <button mat-flat-button color="warn" class="btn-login" (click)="jugarAhora()" [disabled]="isLoading">
+                    <!-- <button mat-flat-button color="warn" class="btn-login" (click)="jugarAhora()" [disabled]="isLoading">
                         <span class="text-btn" *ngIf="!isLoading">Jugar Ahora</span>
-                    </button>
+                    </button> -->
+                    <div class="button">
+                        <div class="red">
+                            <span class="texto-boton" (click)="jugarAhora()">Jugar Ahora</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer">
                     <app-footer-app></app-footer-app>

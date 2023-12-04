@@ -1,0 +1,45 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.body{
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFFFF;
+    overflow-y: scroll!important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;//centado vertical
+    align-items: center; //centrado horizontal
+
+    line-height: 2;
+}
+
+.linea {
+    height: 1px;
+    background-color: #ccc;
+    // border: none;
+}
+
+.texto-body{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #8d0000;
+}
+
+.foto{
+    height: 200px;
+    margin-bottom: 6vh;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: #CD0000;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

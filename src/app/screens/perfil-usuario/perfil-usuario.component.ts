@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-perfil-usuario',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class PerfilUsuarioComponent {
 
+  constructor(
+    private router: Router){
+  }
+
+  public goInstrucciones(){
+    this.router.navigate(['instrucciones']);
+  }
+
+  public goJuego(){
+    this.router.navigate(['juego']);
+  }
+
+  public goLentes(){
+    this.router.navigate(['lentes']);
+  }
 }

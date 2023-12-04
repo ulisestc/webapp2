@@ -48,9 +48,9 @@
                     </mat-form-field>
                     <div *ngIf="errors.ciudad" class="invalid-feedback">{{ errors.ciudad }}</div>
 
-                    <mat-form-field appearance="fill">
+                    <mat-form-field class="inputs-login" appearance="fill">
                         <mat-label>Edad</mat-label>
-                        <mat-select [(ngModel)]="user.edad" name="edad">
+                        <mat-select [(ngModel)]="user.edad" name="edad" >
                             <mat-option *ngFor="let edad of edades" [value]="edad.value">
                                 {{edad.value}}
                             </mat-option>
@@ -62,12 +62,16 @@
                         Acepto los <span class="label-pwd" (click)="terminosCondiciones()" style="cursor: pointer;">Términos y Condiciones</span>
                     </mat-checkbox>
 
-                    <div class="form-login-desktop">
-                        <button mat-flat-button color="warn" class="btn-login" (click)="registrar()">
-                            <span class="text-btn">REGISTRARME</span>
-                        </button>
+                    <div class="btn-registro">
+                        <div class="button">
+                            <div class="red-btn">
+                                <span class="texto-boton" (click)="registrar()">REGISTRARME</span>
+                            </div>
+                        </div>
                     </div>
+
                     <hr>
+                    
                     <div class="d-flex flex-direction-row justify-content-center w-100">
                         <span class="txt-registro">¿Ya tienes una cuenta?<span class="red" (click)="goLogin()"> Inicia sesión</span></span>
                     </div>
@@ -131,7 +135,7 @@
                         </mat-form-field>
                         <div *ngIf="errors.ciudad" class="invalid-feedback">{{ errors.ciudad }}</div>
         
-                        <mat-form-field appearance="fill">
+                        <mat-form-field class="inputs-login" appearance="fill">
                             <mat-label>Edad</mat-label>
                             <mat-select [(ngModel)]="user.edad" name="edad">
                                 <mat-option *ngFor="let edad of edades" [value]="edad.value">
@@ -146,9 +150,14 @@
                         </mat-checkbox>
                         
                         <div class="d-flex flex-direction-row justify-content-center w-100 mt-4 mb-4">
-                            <button mat-flat-button color="warn" class="btn-login" (click)="registrar()">
-                                <span class="text-btn">REGISTRARME</span>
-                            </button>
+                            <!-- <button mat-flat-button color="warn" class="btn-login" (click)="login()">
+                                <span class="text-btn">INGRESAR</span>
+                            </button> -->
+                            <div class="button">
+                                <div class="red-btn">
+                                    <span class="texto-boton" (click)="registrar()">REGISTRARME</span>
+                                </div>
+                            </div>
                         </div>
                         <hr>
                         <div class="d-flex flex-direction-row justify-content-center w-100">

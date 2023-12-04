@@ -124,9 +124,40 @@
 
 .text-btn-omitir{
     color: #CD0000;
+    font-size: 16px;
+    font-family: Avenir;
 }
 
 .botones button{
     width: 156px;
     height: 40px;
+}
+
+.linea {
+    height: 1px;
+    background-color: #ccc;
+    // border: none;
+}
+
+// ---------------------------------------------------------------------------------------
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+.red{
+    width: 156px;
+    height: 40px;
+    background-color: #CD0000;
+    margin-bottom: 6vh;
+}
+
+.texto-boton{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 16px;
 }

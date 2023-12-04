@@ -39,9 +39,9 @@
                             </form>
                             
                             <!-- Select tiendas -->
-                            <mat-form-field appearance="outline" class="mt-3">
+                            <mat-form-field appearance="outline" class="mat-option select mt-3">
                                 <mat-label>Tienda de compra</mat-label>
-                                <mat-select [(ngModel)]="participacion.tienda" name="tiendas" (selectionChange)="changeTienda($event)">
+                                <mat-select [(ngModel)]="participacion.tienda" name="tiendas" (selectionChange)="changeTienda($event)" class="select">
                                     <mat-option *ngFor="let tienda of tiendas" [value]="tienda.value">
                                         {{tienda.nombre}}
                                     </mat-option>
@@ -49,9 +49,14 @@
                             </mat-form-field>
                             
                             <div class="d-flex flex-direction-row justify-content-center w-100 mt-3 mb-3">
-                                <button mat-flat-button color="warn" class="btn-login" (click)="registrarCodigo()" [disabled]="isLoading">
+                                <!-- <button mat-flat-button color="warn" class="btn-login" (click)="registrarCodigo()" [disabled]="isLoading">
                                     <span class="text-btn" *ngIf="!isLoading">REGISTRAR</span>
-                                </button>
+                                </button> -->
+                                <div class="button">
+                                    <div class="red">
+                                        <span class="texto-boton" (click)="registrarCodigo()">REGISTRAR</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- Sección del puntaje -->

@@ -254,3 +254,30 @@ mat-label{
     align-items: flex-end;
 }
 
+// -------------------------------------------------
+.inputs-login{
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+.red-btn{
+    width: 188px;
+    height: 40px;
+    background-color: #CD0000;
+    // margin-bottom: 6vh;
+}
+
+.texto-boton{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Avenir;
+}
